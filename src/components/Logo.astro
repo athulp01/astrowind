@@ -1,6 +1,9 @@
 ---
+import { findImage } from '~/utils/images';
+const image = await findImage("~/assets/images/financ.png");
 ---
 
+
 <span class="self-center ml-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  <img class="h-10" src="src/assets/images/financ.png" /></span
+  <img class="h-10" src={image.src} /></span
 >
